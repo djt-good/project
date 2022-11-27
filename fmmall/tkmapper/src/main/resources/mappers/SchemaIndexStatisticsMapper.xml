@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wz.dao.SchemaIndexStatisticsMapper">
+  <resultMap id="BaseResultMap" type="com.wz.domain.SchemaIndexStatistics">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="table_schema" jdbcType="VARCHAR" property="tableSchema" />
+    <result column="table_name" jdbcType="VARCHAR" property="tableName" />
+    <result column="index_name" jdbcType="VARCHAR" property="indexName" />
+    <result column="rows_selected" jdbcType="BIGINT" property="rowsSelected" />
+    <result column="rows_inserted" jdbcType="BIGINT" property="rowsInserted" />
+    <result column="rows_updated" jdbcType="BIGINT" property="rowsUpdated" />
+    <result column="rows_deleted" jdbcType="BIGINT" property="rowsDeleted" />
+    <result column="select_latency" jdbcType="LONGVARCHAR" property="selectLatency" />
+    <result column="insert_latency" jdbcType="LONGVARCHAR" property="insertLatency" />
+    <result column="update_latency" jdbcType="LONGVARCHAR" property="updateLatency" />
+    <result column="delete_latency" jdbcType="LONGVARCHAR" property="deleteLatency" />
+  </resultMap>
+</mapper>

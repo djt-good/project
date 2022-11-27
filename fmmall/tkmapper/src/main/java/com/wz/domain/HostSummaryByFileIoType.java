@@ -1,0 +1,89 @@
+package com.wz.domain;
+
+import javax.persistence.*;
+
+@Table(name = "host_summary_by_file_io_type")
+public class HostSummaryByFileIoType {
+    private String host;
+
+    @Column(name = "event_name")
+    private String eventName;
+
+    private Long total;
+
+    @Column(name = "total_latency")
+    private String totalLatency;
+
+    @Column(name = "max_latency")
+    private String maxLatency;
+
+    /**
+     * @return host
+     */
+    public String getHost() {
+        return host;
+    }
+
+    /**
+     * @param host
+     */
+    public void setHost(String host) {
+        this.host = host;
+    }
+
+    /**
+     * @return event_name
+     */
+    public String getEventName() {
+        return eventName;
+    }
+
+    /**
+     * @param eventName
+     */
+    public void setEventName(String eventName) {
+        this.eventName = eventName;
+    }
+
+    /**
+     * @return total
+     */
+    public Long getTotal() {
+        return total;
+    }
+
+    /**
+     * @param total
+     */
+    public void setTotal(Long total) {
+        this.total = total;
+    }
+
+    /**
+     * @return total_latency
+     */
+    public String getTotalLatency() {
+        return totalLatency;
+    }
+
+    /**
+     * @param totalLatency
+     */
+    public void setTotalLatency(String totalLatency) {
+        this.totalLatency = totalLatency;
+    }
+
+    /**
+     * @return max_latency
+     */
+    public String getMaxLatency() {
+        return maxLatency;
+    }
+
+    /**
+     * @param maxLatency
+     */
+    public void setMaxLatency(String maxLatency) {
+        this.maxLatency = maxLatency;
+    }
+}

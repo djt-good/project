@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wz.dao.IoByThreadByLatencyMapper">
+  <resultMap id="BaseResultMap" type="com.wz.domain.IoByThreadByLatency">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="user" jdbcType="VARCHAR" property="user" />
+    <result column="total" jdbcType="DECIMAL" property="total" />
+    <result column="thread_id" jdbcType="BIGINT" property="threadId" />
+    <result column="processlist_id" jdbcType="BIGINT" property="processlistId" />
+    <result column="total_latency" jdbcType="LONGVARCHAR" property="totalLatency" />
+    <result column="min_latency" jdbcType="LONGVARCHAR" property="minLatency" />
+    <result column="avg_latency" jdbcType="LONGVARCHAR" property="avgLatency" />
+    <result column="max_latency" jdbcType="LONGVARCHAR" property="maxLatency" />
+  </resultMap>
+</mapper>
